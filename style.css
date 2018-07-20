@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none; }
+  *:focus {
+    outline: none; }
+
+body {
+  font-family: "Segoe UI - Semilight", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  background: #686868; }
+  @media screen and (max-width: 1199px) {
+    body {
+      font-size: 16px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+h1 {
+  line-height: 30px;
+  color: #61e9c2; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  a:visited {
+    color: white; }
+  a:hover {
+    color: #61e9c2; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+header .container.mobile {
+  display: none; }
+  @media screen and (max-width: 1199px) {
+    header .container.mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px; } }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+  @media screen and (max-width: 1199px) {
+    header {
+      height: 60px; } }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    position: relative; }
+
+.menu {
+  display: flex;
+  height: 100%;
+  align-items: center; }
+  .menu a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px; }
+
+.number .fa-phone {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.hamburger-inner {
+  background-color: #61e9c2 !important; }
+  .hamburger-inner:before, .hamburger-inner:after {
+    background-color: #61e9c2 !important; }
+
+nav.mobile-menu {
+  position: absolute;
+  top: 50px;
+  left: -100%;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 5; }
+  nav.mobile-menu.visible {
+    left: 0; }
+    nav.mobile-menu.visible a {
+      padding: 10px; }
+
+@media screen and (max-width: 1199px) {
+  header .desktop {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
